@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jay/RiderProjects/ScannerApp/ScannerApp/ScannerApp.csproj": {}
+    "/Users/jay/GitHub/scannerapp/ScannerApp/ScannerApp.csproj": {}
   },
   "projects": {
-    "/Users/jay/RiderProjects/ScannerApp/ScannerApp/ScannerApp.csproj": {
+    "/Users/jay/GitHub/scannerapp/ScannerApp/ScannerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jay/RiderProjects/ScannerApp/ScannerApp/ScannerApp.csproj",
+        "projectUniqueName": "/Users/jay/GitHub/scannerapp/ScannerApp/ScannerApp.csproj",
         "projectName": "ScannerApp",
-        "projectPath": "/Users/jay/RiderProjects/ScannerApp/ScannerApp/ScannerApp.csproj",
+        "projectPath": "/Users/jay/GitHub/scannerapp/ScannerApp/ScannerApp.csproj",
         "packagesPath": "/Users/jay/.nuget/packages/",
-        "outputPath": "/Users/jay/RiderProjects/ScannerApp/ScannerApp/obj/",
+        "outputPath": "/Users/jay/GitHub/scannerapp/ScannerApp/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

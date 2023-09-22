@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O87Evx5FkVCOQTsZVloeRWZcNVnvQbj3/+rLHUwQo+YXW3iO/LM8PNd1SK6GsyaLFyUyBoq7d4ys72UCEEVNzQ==",
+  "dgSpecHash": "LowyGjbXfWCLxVoMeKkY33p1AnICjK73xGO8kZkEGYt5qLA6Fqy4E5lpUttU0CWo+s07i8rLk3jVx5AQm8qCIA==",
   "success": true,
-  "projectFilePath": "/Users/jay/RiderProjects/ScannerApp/ScannerApp/ScannerApp.csproj",
+  "projectFilePath": "/Users/jay/GitHub/scannerapp/ScannerApp/ScannerApp.csproj",
   "expectedPackageFiles": [
     "/Users/jay/.nuget/packages/google.protobuf/3.21.9/google.protobuf.3.21.9.nupkg.sha512",
     "/Users/jay/.nuget/packages/googlegson/2.9.1.1/googlegson.2.9.1.1.nupkg.sha512",
