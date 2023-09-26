@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="_Nord0">#2E3440</Color>
+    <Color x:Key="_Nord1">#3B4252</Color>
+    <Color x:Key="_Nord2">#434C5E</Color>
+    <Color x:Key="_Nord3">#4C566A</Color>
+    <Color x:Key="_Nord4">#D8DEE9</Color>
+    <Color x:Key="_Nord5">#E5E9F0</Color>
+    <Color x:Key="_Nord6">#ECEFF4</Color>
+    <Color x:Key="_Nord7">#8FBCBB</Color>
+    <Color x:Key="_Nord8">#88C0D0</Color>
+    <Color x:Key="_Nord9">#81A1C1</Color>
+    <Color x:Key="_Nord10">#5E81AC</Color>
+    <Color x:Key="_Nord11">#BF616A</Color>
+    <Color x:Key="_Nord12">#D08770</Color>
+    <Color x:Key="_Nord13">#EBCB8B</Color>
+    <Color x:Key="_Nord14">#A3BE8C</Color>
+    <Color x:Key="_Nord15">#B48EAD</Color>
+    
+    <SolidColorBrush x:Key="Nord0" Color="{StaticResource _Nord0}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord1" Color="{StaticResource _Nord1}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord2" Color="{StaticResource _Nord2}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord3" Color="{StaticResource _Nord3}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord4" Color="{StaticResource _Nord4}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord5" Color="{StaticResource _Nord5}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord6" Color="{StaticResource _Nord6}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord7" Color="{StaticResource _Nord7}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord8" Color="{StaticResource _Nord8}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord9" Color="{StaticResource _Nord9}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord10" Color="{StaticResource _Nord10}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord11" Color="{StaticResource _Nord11}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord12" Color="{StaticResource _Nord12}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord13" Color="{StaticResource _Nord13}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord14" Color="{StaticResource _Nord14}"></SolidColorBrush>
+    <SolidColorBrush x:Key="Nord15" Color="{StaticResource _Nord15}"></SolidColorBrush>
+
+</ResourceDictionary>

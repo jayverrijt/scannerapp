@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesktopApp.MainPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#2e3440">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" x:Name="DashboardLabel" FontSize="48" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Dashboard"></Label>
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btnListUser" Text="Gebruikers" Clicked="btnUsersList"></Button>
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnAddUser" Text="Gebruiker Toevoegen" Clicked="btnUsersAdd"></Button>
+            <Button Grid.Row="1" Grid.Column="2" x:Name="btnDelUser" Text="Gebruiker Verwijderen" Clicked="btnUsersDel"></Button>
+            <Button Grid.Row="2" Grid.Column="0" x:Name="btnProdChange" Text="Producten Veranderen" Clicked="btnProdChanged"></Button>
+            <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="btnListProducts" Text="Producten" Clicked="btnProdList"></Button>
+            <Button Grid.Row="3" Grid.Column="0" x:Name="btnAddProducts" Grid.ColumnSpan="2" Text="Producten toevoegen" Clicked="btnProdAdd"></Button>
+            <Button Grid.Row="3" Grid.Column="2" x:Name="btnDelProducts" Text="Producten verwijderen" Clicked="btnProdDel"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
