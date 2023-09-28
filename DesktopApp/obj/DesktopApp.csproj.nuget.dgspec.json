@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jay/RiderProjects/ScannerApp/MauiApp1/DesktopApp/DesktopApp.csproj": {}
+    "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj": {}
   },
   "projects": {
-    "/Users/jay/RiderProjects/ScannerApp/MauiApp1/DesktopApp/DesktopApp.csproj": {
+    "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jay/RiderProjects/ScannerApp/MauiApp1/DesktopApp/DesktopApp.csproj",
+        "projectUniqueName": "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj",
         "projectName": "DesktopApp",
-        "projectPath": "/Users/jay/RiderProjects/ScannerApp/MauiApp1/DesktopApp/DesktopApp.csproj",
+        "projectPath": "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj",
         "packagesPath": "/Users/jay/.nuget/packages/",
-        "outputPath": "/Users/jay/RiderProjects/ScannerApp/MauiApp1/DesktopApp/obj/",
+        "outputPath": "/Users/jay/GitHub/scannerapp/DesktopApp/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

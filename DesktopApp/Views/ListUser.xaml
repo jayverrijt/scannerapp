@@ -5,7 +5,18 @@
              x:Class="DesktopApp.Views.ListUser">
     <ContentPage.Content>
         <Grid BackgroundColor="#2e3440">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Style="{StaticResource addUserLabel}" Text="Client Accounts"></Label>
+            <Label Grid.Column="1" Grid.Row="0" Style="{StaticResource addUserLabel}" Text="Admin Accounts"></Label>
+            <ListView Grid.Row="1" Style="{StaticResource userOverview}" Grid.Column="1" x:Name="MyAdminListView"/>
+            <ListView Grid.Row="1" Style="{StaticResource userOverview}" Grid.Column="0" x:Name="MyClientListView"/>
         </Grid>
- 
     </ContentPage.Content>
 </ContentPage>

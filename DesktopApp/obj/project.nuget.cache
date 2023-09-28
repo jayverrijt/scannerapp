@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OMYv7m9XR5CsehVchLtk4BQykZFXiDPEgLjdzq9VJsZowizWrNR2F4GA7j7kzp829+i5lfB7QhUj39HUo/Jg9A==",
+  "dgSpecHash": "P1LD+wUMTV4dE/HUSY5K6PegnVLf1Q91bMs7OzTHAWZoPWRmqustElgtrtZaiq31avXx/S+y+M7o0I7JhrQIcA==",
   "success": true,
-  "projectFilePath": "/Users/jay/RiderProjects/ScannerApp/MauiApp1/DesktopApp/DesktopApp.csproj",
+  "projectFilePath": "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj",
   "expectedPackageFiles": [
     "/Users/jay/.nuget/packages/google.protobuf/3.21.9/google.protobuf.3.21.9.nupkg.sha512",
     "/Users/jay/.nuget/packages/googlegson/2.9.1.1/googlegson.2.9.1.1.nupkg.sha512",

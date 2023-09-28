@@ -372,5 +372,19 @@
         <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Nord5}, Dark={StaticResource Nord1}}" />
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Nord1}, Dark={StaticResource Nord5}}" />
     </Style>
+    <Style TargetType="Label" x:Key="addUserLabel">
+        <Setter Property="TextColor" Value="#D8Dee9"></Setter>
+        <Setter Property="FontFamily" Value="Open Sans Regular"></Setter>
+        <Setter Property="FontSize" Value="48"></Setter>
+        <Setter Property="FontAttributes" Value="Bold"></Setter>
+        <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+    </Style>
+    
+    <Style TargetType="ListView" x:Key="userOverview">
+        <Setter Property="Background" Value="#2e3440"></Setter>
+        <Setter Property="SeparatorColor" Value="#5e81ac"></Setter>
+        
+    </Style>
 
 </ResourceDictionary>
