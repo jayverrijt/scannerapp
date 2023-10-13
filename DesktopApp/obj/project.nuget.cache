@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "P1LD+wUMTV4dE/HUSY5K6PegnVLf1Q91bMs7OzTHAWZoPWRmqustElgtrtZaiq31avXx/S+y+M7o0I7JhrQIcA==",
+  "dgSpecHash": "D+2Ij5biiLT5udGN1YUUGLJ99bZwl1e9516TFkR1vcTOOaq9AZ3txreZOskxWqdOsD4QZ9fL63F3fXkrg+8akQ==",
   "success": true,
   "projectFilePath": "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,7 @@
     "/Users/jay/.nuget/packages/microsoft.extensions.logging.debug/7.0.0/microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "/Users/jay/.nuget/packages/microsoft.maui.graphics/7.0.92/microsoft.maui.graphics.7.0.92.nupkg.sha512",
+    "/Users/jay/.nuget/packages/microsoft.maui.graphics/7.0.96/microsoft.maui.graphics.7.0.96.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",

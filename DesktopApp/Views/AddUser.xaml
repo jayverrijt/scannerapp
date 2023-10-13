@@ -5,6 +5,34 @@
              x:Class="DesktopApp.Views.AddUser">
     <ContentPage.Content>
         <Grid BackgroundColor="#2e3440">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition> 
+                <ColumnDefinition Width="2*"></ColumnDefinition> 
+                <ColumnDefinition Width="1*"></ColumnDefinition> 
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource HeadLabel}" Text="Gebruikers Toevoegen"></Label>
+            <Label FontSize="24" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Username:"></Label>
+            <Label FontSize="24" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Password:"></Label>
+            <Label FontSize="24" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Email:"></Label>
+            <Entry x:Name="userBox" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: 1234" FontAttributes="Italic" FontSize="24"></Entry>
+            <Entry x:Name="passBox" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" IsPassword="True" Placeholder="Voorbeeld: ZwakWachtwoord123!@" FontAttributes="Italic" FontSize="24"></Entry>
+            <Entry x:Name="emailBox" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: example@test.nl" FontAttributes="Italic" FontSize="24"></Entry>
+            <RadioButton x:Name="radioOne" Grid.Column="1" Grid.Row="5" BorderColor="White" VerticalOptions="Center" HorizontalOptions="Center" Value="0" GroupName="UserType"></RadioButton>
+            <RadioButton x:Name="radioTwo" Grid.Column="1" Grid.Row="6" BorderColor="White"  VerticalOptions="Center" HorizontalOptions="Center" Value="1" GroupName="UserType"></RadioButton>
+            <Label  FontSize="24" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Client Account"></Label>
+            <Label FontSize="24" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Admin Account"></Label>
+            <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3" Clicked="CreateUser" Text="Submit"></Button>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

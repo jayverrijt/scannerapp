@@ -5,7 +5,29 @@
              x:Class="DesktopApp.Views.ProdView">
     <ContentPage.Content>
         <Grid BackgroundColor="#2e3440">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="12*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Text="Producten" FontSize="92" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+            <Label Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" Text="Naam"></Label>
+            <Label Grid.Row="1" Grid.Column="1" Style="{StaticResource TabelLabel}" Text="EAN"></Label>
+            <Label Grid.Row="1" Grid.Column="2" Style="{StaticResource TabelLabel}" Text="Art Code"></Label>
+            <Label Grid.Row="1" Grid.Column="3" Style="{StaticResource TabelLabel}" Text="Art Nummer"></Label>
+            <Label Grid.Row="1" Grid.Column="4" Style="{StaticResource TabelLabel}" Text="Formule"></Label>
+            <ListView Grid.Row="2" Grid.Column="0" BackgroundColor="Transparent" x:Name="ArticalNameList"></ListView>
+            <ListView Grid.Row="2" Grid.Column="1" BackgroundColor="Transparent" x:Name="ArticalEANList"></ListView>
+            <ListView Grid.Row="2" Grid.Column="2" BackgroundColor="Transparent" x:Name="ArticalARTCList"></ListView>
+            <ListView Grid.Row="2" Grid.Column="3" BackgroundColor="Transparent" x:Name="ArticalARTNList"></ListView>
+            <ListView Grid.Row="2" Grid.Column="4" BackgroundColor="Transparent" x:Name="ArticalFORList"></ListView>
         </Grid>
- 
     </ContentPage.Content>
 </ContentPage>

@@ -6,6 +6,5 @@
     <ContentPage.Content>
         <Grid BackgroundColor="#2e3440">
         </Grid>
- 
     </ContentPage.Content>
 </ContentPage>

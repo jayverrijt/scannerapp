@@ -5,6 +5,34 @@
              x:Class="DesktopApp.Views.ProdAdd">
     <ContentPage.Content>
         <Grid BackgroundColor="#2e3440">
+                       <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition> 
+                <ColumnDefinition Width="2*"></ColumnDefinition> 
+                <ColumnDefinition Width="1*"></ColumnDefinition> 
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource HeadLabel}" Text="Product Toevoegen"></Label>
+            <Label FontSize="24" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Artikel Naam:"></Label>
+            <Label FontSize="24" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="EAN:"></Label>
+            <Label FontSize="24" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Artikel Code:"></Label>
+            <Entry x:Name="prodName" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: Test Artikel" FontAttributes="Italic" FontSize="24"></Entry>
+            <Entry x:Name="eanNmr" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: 1234567890" FontAttributes="Italic" FontSize="24"></Entry>
+            <Entry x:Name="artNmr" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: 012345" FontAttributes="Italic" FontSize="24"></Entry>
+            <Entry x:Name="prodNmr" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: 0123" FontAttributes="Italic" FontSize="24"></Entry>
+            <Entry x:Name="formNmr" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Voorbeeld: 0123" FontAttributes="Italic" FontSize="24"></Entry>
+            <Label  FontSize="24" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Product Nummer"></Label>
+            <Label FontSize="24" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Formule Nummer"></Label>
+            <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3" Clicked="CreateProd" Text="Submit"></Button>
         </Grid>
  
     </ContentPage.Content>

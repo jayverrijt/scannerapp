@@ -380,11 +380,17 @@
         <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
         <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
     </Style>
-    
     <Style TargetType="ListView" x:Key="userOverview">
         <Setter Property="Background" Value="#2e3440"></Setter>
         <Setter Property="SeparatorColor" Value="#5e81ac"></Setter>
-        
     </Style>
-
+    <Style TargetType="Label" x:Key="HeadLabel">
+        <Setter Property="FontSize" Value="48"></Setter>        
+        <Setter Property="TextColor" Value="White"></Setter>
+        <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+    </Style>
+    <Style TargetType="Label" x:Key="TabelLabel">
+        <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+    </Style>
 </ResourceDictionary>

@@ -5,6 +5,28 @@
              x:Class="DesktopApp.Views.DelUser">
     <ContentPage.Content>
         <Grid BackgroundColor="#2e3440">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="12*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource HeadLabel}" Text="Verwijder Gebruiker"></Label>
+            <ListView Grid.Row="1" Grid.Column="0" x:Name="listAllUsers" HasUnevenRows="True" Grid.ColumnSpan="2" BackgroundColor="Transparent">
+               <ListView.ItemTemplate>
+                   <DataTemplate>
+                       <ViewCell>
+                           <StackLayout>
+                                <Label Text="{Binding .}" FontSize="24" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>    
+                                <Button Text="Delete" Clicked="DeleteUser" VerticalOptions="Center"  WidthRequest="100" HorizontalOptions="End"></Button>
+                           </StackLayout>
+                       </ViewCell>
+                   </DataTemplate>
+               </ListView.ItemTemplate> 
+            </ListView>
+            
         </Grid>
    
     </ContentPage.Content>

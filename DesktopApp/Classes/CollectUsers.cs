@@ -66,6 +66,32 @@ namespace DesktopApp.Classes
                  return null;
              }   
          }
+   public List<string> getAllUsers()
+         {
+             var listc = new List<string>();
+             
+             try
+             {
+        
+                 db.Open();
+                 MySqlDataReader rowc;
+                 rowc = db.ExecuteReader("SELECT username FROM users");
+                 while (rowc.Read())
+                 {
+                     for(int i=0; i<rowc.FieldCount; i++)
+                         listc.Add(rowc.GetValue(i).ToString());
+                 }
+        
+                 Debug.WriteLine(listc);
+                 return listc;
+             }
+             catch (Exception ex)
+             {
+                 Debug.WriteLine("ERR " + ex);
+                 return null;
+             }   
+         }
 
+         
     }
 }
