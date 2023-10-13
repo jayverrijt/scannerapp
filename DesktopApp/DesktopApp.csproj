@@ -62,6 +62,9 @@
       <MauiXaml Update="Views\MainPage.xaml">
         <SubType>Designer</SubType>
       </MauiXaml>
+      <MauiXaml Update="Views\ProdEdit.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
     </ItemGroup>
 
 
@@ -74,6 +77,10 @@
       <Compile Update="LoginPage.xaml.cs">
         <SubType>Code</SubType>
         <DependentUpon>LoginPage.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\ProdEdit.xaml.cs">
+        <DependentUpon>ProdEdit.xaml</DependentUpon>
+        <SubType>Code</SubType>
       </Compile>
     </ItemGroup>
 

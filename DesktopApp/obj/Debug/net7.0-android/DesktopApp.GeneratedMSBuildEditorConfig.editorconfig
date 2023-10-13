@@ -86,6 +86,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdDel.x
 build_metadata.AdditionalFiles.TargetPath = Views/ProdDel.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ProdDel.xaml
 
+[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdEdit.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdEdit.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProdEdit.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProdEdit.xaml
+
 [/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdView.xaml

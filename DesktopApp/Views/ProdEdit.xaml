@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesktopApp.ProdEdit">
+    <ContentPage.Content>
+        <Grid Background="#2e3440">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition> 
+                <ColumnDefinition Width="*"></ColumnDefinition> 
+                <ColumnDefinition Width="*"></ColumnDefinition> 
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource HeadLabel}" x:Name="prodName" Text=""></Label>
+            <Label Grid.Row="1" Grid.Column="1" FontSize="24" FontAttributes="Bold" Text="Oude Informatie"></Label>
+            <Label Grid.Row="1" Grid.Column="2" FontSize="24" FontAttributes="Bold" Text="Nieuwe Informate"></Label>
+            <Label Grid.Row="2" Grid.Column="0" FontSize="24" FontAttributes="Bold" Text="Naam"></Label>
+            <Label Grid.Row="3" Grid.Column="0" FontSize="24" FontAttributes="Bold" Text="Product Code"></Label>
+            <Label Grid.Row="4" Grid.Column="0" FontSize="24" FontAttributes="Bold" Text="Artikel Nummer"></Label>
+            <Label Grid.Row="5" Grid.Column="0" FontSize="24" FontAttributes="Bold" Text="Formule Nummer"></Label>
+            <!--Artname-->
+            <Label Grid.Column="1" Grid.Row="2" x:Name="oldArtName"></Label>
+            <Entry Grid.Column="2" Grid.Row="2" x:Name="newArtName"></Entry>
+            <!--Prodcode-->
+            <Label Grid.Column="1" Grid.Row="3" x:Name="oldProdCode"></Label>
+            <Entry Grid.Column="2" Grid.Row="3" x:Name="newProdCode"></Entry>
+            <!--Artnummer-->
+             <Label Grid.Column="1" Grid.Row="4" x:Name="oldArtNmr"></Label>
+             <Entry Grid.Column="2" Grid.Row="4" x:Name="newArtNmr"></Entry>
+             <!--formule-->
+             <Label Grid.Column="1" Grid.Row="5" x:Name="oldFormName"></Label>
+             <Entry Grid.Column="2" Grid.Row="5" x:Name="newFormName"></Entry>
+            
+            <Button Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="9" Clicked="UpdateSet" Text="Update Product"></Button>
+        </Grid>        
+    </ContentPage.Content>
+</ContentPage>
