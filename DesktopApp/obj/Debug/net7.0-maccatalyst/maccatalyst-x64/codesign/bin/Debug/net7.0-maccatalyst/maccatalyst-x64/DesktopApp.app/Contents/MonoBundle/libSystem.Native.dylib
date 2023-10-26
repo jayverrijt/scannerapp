@@ -1,1 +1,1 @@
--v --force --timestamp=none --sign - /Users/jay/GitHub/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/DesktopApp.app/Contents/MonoBundle/libSystem.Native.dylib
+-v --force --timestamp=none --sign - /Users/jay/RiderProjects/ScannerApp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/DesktopApp.app/Contents/MonoBundle/libSystem.Native.dylib

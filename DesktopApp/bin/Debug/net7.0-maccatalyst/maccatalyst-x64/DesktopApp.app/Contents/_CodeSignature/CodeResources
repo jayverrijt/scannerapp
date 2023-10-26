@@ -54,18 +54,25 @@
 			9CuGCYVNgNf4HydjQFBKpegrvk1z0FCA/vH8yiREtNU=
 			</data>
 		</dict>
+		<key>MonoBundle/BouncyCastle.Cryptography.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ghU8DmiDSg9A4gA4QlQpo+P5z02rvJGRtHbP5WGKFB0=
+			</data>
+		</dict>
 		<key>MonoBundle/DesktopApp.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ikZfUfXddhvBylyEWa3PGSjW4P/kbUHk7I5v9opxLs=
+			q3x+6TF7RLH1cLKChgNZ5p4hEAx7HGah3GJ636bgoZ8=
 			</data>
 		</dict>
 		<key>MonoBundle/DesktopApp.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fH77Du3lppFkM3+qLaZ7ggbTCqS3+eRJikR8JtQu4pE=
+			uGZWZdTv5+tXtHCoxCZyA5XDSSTPC8TTTt+FF6V+kVw=
 			</data>
 		</dict>
 		<key>MonoBundle/Google.Protobuf.dll</key>

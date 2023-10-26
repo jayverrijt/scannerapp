@@ -1,28 +1,29 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Diagnostics;
 
 namespace DesktopApp.Classes 
 {
-    class DBConnect 
+    class DBConnect
     {
-        MySql.Data.MySqlClient.MySqlConnection conn;
+        MySqlConnection conn;
         string myConnectionString;
-        static string host = "localhost";
+        static string host = "phpmyadmin.jverrijt.nl";
         static string database = "scannerapp";
         static string userDB = "root";
-        static string password = "";
-        public static string strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password;
+        static string password = "1234";
+        static string ssltype = "None";
+        static string dbport = "3306";
+        static string dbpubkeyre = "true";
+        static string strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password + ";SslMode=" + ssltype + ";Port=" + dbport + "AllowPublicKeyRetrieval=" + dbpubkeyre;
+        // strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password;
 
         public bool Open()
         {
             try
             {
-                strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password;
+                strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password + ";SslMode=" +ssltype + ";Port=" + dbport + ";AllowPublicKeyRetrieval=" + dbpubkeyre;
+               // strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password;
                 conn = new MySqlConnection(strProvider);
                 conn.Open();
                 return true;

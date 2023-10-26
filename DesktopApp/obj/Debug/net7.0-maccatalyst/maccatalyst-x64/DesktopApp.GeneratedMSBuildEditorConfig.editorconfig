@@ -8,87 +8,87 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesktopApp
-build_property.ProjectDir = /Users/jay/GitHub/scannerapp/DesktopApp/
+build_property.ProjectDir = /Users/jay/RiderProjects/ScannerApp/DesktopApp/
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/App.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/AppShell.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/LoginPage.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Resources/Styles/Colors.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Resources/Styles/Styles.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/AddUser.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/AddUser.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.AddUser.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/AddUser.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/AddUser.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/DelUser.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/DelUser.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.DelUser.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/DelUser.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/DelUser.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ListUser.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/ListUser.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ListUser.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ListUser.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ListUser.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/MainPage.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/MainPage.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdAdd.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/ProdAdd.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdAdd.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ProdAdd.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ProdAdd.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdChange.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/ProdChange.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdChange.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ProdChange.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ProdChange.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdDel.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/ProdDel.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdDel.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ProdDel.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ProdDel.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdEdit.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/ProdEdit.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdEdit.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ProdEdit.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ProdEdit.xaml
 
-[/Users/jay/GitHub/scannerapp/DesktopApp/Views/ProdView.xaml]
+[/Users/jay/RiderProjects/ScannerApp/DesktopApp/Views/ProdView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesktopApp.Views.ProdView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ProdView.xaml

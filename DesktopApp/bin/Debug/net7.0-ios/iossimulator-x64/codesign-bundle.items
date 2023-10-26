@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/jay/GitHub/scannerapp/DesktopApp</SourceProjectPath>
+      <SourceProjectPath>/Users/jay/RiderProjects/ScannerApp/DesktopApp</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

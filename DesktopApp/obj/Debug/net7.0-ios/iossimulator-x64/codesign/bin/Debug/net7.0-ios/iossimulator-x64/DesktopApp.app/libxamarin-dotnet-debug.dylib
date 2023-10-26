@@ -1,1 +1,1 @@
--v --force --timestamp=none --sign - /Users/jay/GitHub/scannerapp/DesktopApp/bin/Debug/net7.0-ios/iossimulator-x64/DesktopApp.app/libxamarin-dotnet-debug.dylib
+-v --force --timestamp=none --sign - /Users/jay/RiderProjects/ScannerApp/DesktopApp/bin/Debug/net7.0-ios/iossimulator-x64/DesktopApp.app/libxamarin-dotnet-debug.dylib

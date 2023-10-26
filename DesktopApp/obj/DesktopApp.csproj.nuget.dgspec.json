@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj": {}
+    "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj": {}
   },
   "projects": {
-    "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj": {
+    "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj",
+        "projectUniqueName": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj",
         "projectName": "DesktopApp",
-        "projectPath": "/Users/jay/GitHub/scannerapp/DesktopApp/DesktopApp.csproj",
+        "projectPath": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj",
         "packagesPath": "/Users/jay/.nuget/packages/",
-        "outputPath": "/Users/jay/GitHub/scannerapp/DesktopApp/obj/",
+        "outputPath": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -75,7 +75,7 @@
             },
             "MySql.Data": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -192,7 +192,7 @@
             },
             "MySql.Data": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0, )"
             }
           },
           "imports": [
@@ -254,7 +254,7 @@
             },
             "MySql.Data": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0, )"
             }
           },
           "imports": [
