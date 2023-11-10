@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj": {}
+    "/Users/jay/Projects/scannerapp/DesktopApp/DesktopApp.csproj": {}
   },
   "projects": {
-    "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj": {
+    "/Users/jay/Projects/scannerapp/DesktopApp/DesktopApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj",
+        "projectUniqueName": "/Users/jay/Projects/scannerapp/DesktopApp/DesktopApp.csproj",
         "projectName": "DesktopApp",
-        "projectPath": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj",
+        "projectPath": "/Users/jay/Projects/scannerapp/DesktopApp/DesktopApp.csproj",
         "packagesPath": "/Users/jay/.nuget/packages/",
-        "outputPath": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/obj/",
+        "outputPath": "/Users/jay/Projects/scannerapp/DesktopApp/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

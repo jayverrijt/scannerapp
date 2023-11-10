@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k974MUqXK5eXwHXOa6z4rzHaMQsDyZxwAkN7H2D+0x8wIB0q4iBJ91IFf1Fx5YcZw9rthesV1sQol+weOgC5iw==",
+  "dgSpecHash": "tP5o37m3XTLzQSZDINxFQIrjPkqH32JaqCVgq6CBK0Ya1fwHIYUpcgKuVZ/KyJ0dH6Ll5iBT2LCEgXbmF7OOGA==",
   "success": true,
-  "projectFilePath": "/Users/jay/RiderProjects/ScannerApp/DesktopApp/DesktopApp.csproj",
+  "projectFilePath": "/Users/jay/Projects/scannerapp/DesktopApp/DesktopApp.csproj",
   "expectedPackageFiles": [
     "/Users/jay/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "/Users/jay/.nuget/packages/google.protobuf/3.21.9/google.protobuf.3.21.9.nupkg.sha512",

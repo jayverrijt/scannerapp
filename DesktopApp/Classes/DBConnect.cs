@@ -10,8 +10,8 @@ namespace DesktopApp.Classes
         string myConnectionString;
         static string host = "phpmyadmin.jverrijt.nl";
         static string database = "scannerapp";
-        static string userDB = "root";
-        static string password = "1234";
+        static string userDB = "jayv";
+        static string password = "Woezel-2005!";
         static string ssltype = "None";
         static string dbport = "3306";
         static string dbpubkeyre = "true";
