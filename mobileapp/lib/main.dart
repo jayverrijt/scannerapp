@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-
 import 'home.dart';
 
 void main() {
@@ -44,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future userLogin() async {
     //Login API URL
     //use your local IP address instead of localhost or use Web API
-    String url = "https://php.jverrijt.nl/API/ScannerApp/Login.php";
+    String url = "http://www.jverrijt.com/API/ScannerApp/Login.php";
 
     // Showing LinearProgressIndicator.
     setState(() {
