@@ -4,10 +4,12 @@ import 'package:http/http.dart' as http;
 import 'home.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,17 +17,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Color.fromRGBO(46, 52, 57, 1),
-        primaryColor: Color.fromRGBO(94, 129, 172, 1),
+        scaffoldBackgroundColor: const Color.fromRGBO(46, 52, 57, 1),
+        primaryColor: const Color.fromRGBO(94, 129, 172, 1),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Inloggen'),
+      home: const MyHomePage(title: 'Inloggen'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -74,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
         // Navigate to Home Screen
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+            context, MaterialPageRoute(builder: (context) => const HomePage()));
       } else {
         setState(() {
           //hide progress indicator
@@ -100,10 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: new Text(msg),
+          title: Text(msg),
           actions: <Widget>[
             TextButton(
-              child: new Text("OK"),
+              child: const Text("OK"),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -130,8 +132,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Visibility(
               visible: _visible,
               child: Container(
-                margin: EdgeInsets.only(bottom: 10.0),
-                child: LinearProgressIndicator(),
+                margin: const EdgeInsets.only(bottom: 10.0),
+                child: const LinearProgressIndicator(),
               ),
             ),
             Container(
@@ -142,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Theme.of(context).primaryColor,
               size: 80.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Text(
@@ -152,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontSize: 25.0,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Form(
@@ -162,28 +164,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: [
                     Theme(
-                      data: new ThemeData(
-                        primaryColor: Color.fromRGBO(94, 129, 172, 1),
-                        primaryColorDark: Color.fromRGBO(94, 129, 172, 1),
+                      data: ThemeData(
+                        primaryColor: const Color.fromRGBO(94, 129, 172, 1),
+                        primaryColorDark: const Color.fromRGBO(94, 129, 172, 1),
                         hintColor:
-                            Color.fromRGBO(94, 129, 172, 1), //placeholder color
+                            const Color.fromRGBO(94, 129, 172, 1), //placeholder color
                       ),
                       child: TextFormField(
                         controller: userController,
-                        decoration: InputDecoration(
-                          focusedBorder: new OutlineInputBorder(
+                        decoration: const InputDecoration(
+                          focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromRGBO(94, 129, 172, 1),
                               style: BorderStyle.solid,
                             ),
                           ),
-                          enabledBorder: new OutlineInputBorder(
+                          enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromRGBO(94, 129, 172, 1),
                               style: BorderStyle.solid,
                             ),
                           ),
-                          errorBorder: new OutlineInputBorder(
+                          errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Colors.red,
                               width: 1.0,
@@ -191,11 +193,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           labelText: 'Voer Gebruikersnaam in',
-                          prefixIcon: const Icon(
+                          prefixIcon: Icon(
                             Icons.person,
                             color: Color.fromRGBO(94, 129, 172, 1),
                           ),
-                          border: new OutlineInputBorder(
+                          border: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromRGBO(94, 129, 172, 1),
                               style: BorderStyle.solid,
@@ -211,47 +213,47 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Theme(
-                      data: new ThemeData(
-                        primaryColor: Color.fromRGBO(94, 129, 172, 1),
-                        primaryColorDark: Color.fromRGBO(94, 129, 172, 1),
+                      data: ThemeData(
+                        primaryColor: const Color.fromRGBO(94, 129, 172, 1),
+                        primaryColorDark: const Color.fromRGBO(94, 129, 172, 1),
                         hintColor:
-                            Color.fromRGBO(94, 129, 172, 1), //placeholder color
+                            const Color.fromRGBO(94, 129, 172, 1), //placeholder color
                       ),
                       child: TextFormField(
                         controller: pwdController,
                         obscureText: true,
-                        decoration: InputDecoration(
-                          focusedBorder: new OutlineInputBorder(
+                        decoration: const InputDecoration(
+                          focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromRGBO(94, 129, 172, 1),
                               style: BorderStyle.solid,
                             ),
                           ),
-                          enabledBorder: new OutlineInputBorder(
+                          enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromRGBO(94, 129, 172, 1),
                               style: BorderStyle.solid,
                             ),
                           ),
-                          errorBorder: new OutlineInputBorder(
+                          errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Colors.red,
                               width: 1.0,
                               style: BorderStyle.solid,
                             ),
                           ),
-                          border: new OutlineInputBorder(
+                          border: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromRGBO(94, 129, 172, 1),
                               style: BorderStyle.solid,
                             ),
                           ),
                           labelText: 'Voer ur wachtwoord in',
-                          prefixIcon: const Icon(
+                          prefixIcon: Icon(
                             Icons.lock,
                             color: Color.fromRGBO(94, 129, 172, 1),
                           ),
@@ -265,7 +267,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Padding(
@@ -275,16 +277,16 @@ class _MyHomePageState extends State<MyHomePage> {
                           // Validate returns true if the form is valid, or false otherwise.
                           if (_formKey.currentState!.validate()) {userLogin()}
                         },
-                        child: Padding(
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Theme.of(context).primaryColor),
+                        ),
+                        child: const Padding(
                           padding: EdgeInsets.all(16.0),
                           child: Text(
                             'Inloggen',
                             style: TextStyle(fontSize: 18.0),
                           ),
-                        ),
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              Theme.of(context).primaryColor),
                         ),
                       ),
                     ),
