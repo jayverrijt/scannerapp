@@ -1,3 +1,4 @@
+import 'package:ScannerApp/Product.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_barcode_scanner/simple_barcode_scanner.dart';
 //import http package manually
@@ -45,20 +46,12 @@ class _SearchBar extends State {
                 setState(() {
                   if (res is String) {
                     var result = res;
-                    showDialog(
-                        // Temporary dialog to show the scanned barcode
-                        context: context,
-                        builder: (context) => AlertDialog(
-                              title: const Text("Barcode"),
-                              content: Text(result),
-                              actions: [
-                                TextButton(
-                                    onPressed: () {
-                                      Navigator.pop(context);
-                                    },
-                                    child: const Text("OK"))
-                              ],
-                            ));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return Product(search: result);
+                      }),
+                    );
                   }
                 });
               }),
@@ -82,13 +75,16 @@ class _SearchBar extends State {
     ));
   }
 
+  final SearchController = TextEditingController();
+
   Widget searchField() {
     //search input field
     return Container(
-        child: const TextField(
+        child: TextField(
       autofocus: true,
-      style: TextStyle(color: Colors.white, fontSize: 18),
-      decoration: InputDecoration(
+      controller: SearchController,
+      style: const TextStyle(color: Colors.white, fontSize: 18),
+      decoration: const InputDecoration(
         hintStyle: TextStyle(color: Colors.white, fontSize: 18),
         hintText: "Zoek voor een product",
         enabledBorder: UnderlineInputBorder(
@@ -98,6 +94,23 @@ class _SearchBar extends State {
           borderSide: BorderSide(color: Colors.white, width: 2),
         ), // focused border color
       ), //decoration for search input field
+      onSubmitted: (value) {
+        //on submit of search text
+        setState(() {
+          searching = false;
+          //set searching false on submit
+        });
+        var search = SearchController.text;
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) {
+            return Product(search: search);
+          }),
+        );
+        setState(() {
+          searching = searching;
+        });
+      },
     ));
   }
 }
