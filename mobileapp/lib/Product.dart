@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -29,10 +28,10 @@ class ProductData {
 
 class Product extends StatelessWidget {
   final String search;
-
   const Product({Key? key, required this.search}) : super(key: key);
 
   Future<ProductData> sendData() async {
+    print(search);
     final response = await http.post(
       Uri.parse('http://jverrijt.com/API/ScannerApp/fetchProducts.php'),
       headers: <String, String>{
@@ -56,24 +55,91 @@ class Product extends StatelessWidget {
     sendData();
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Product Information'),
-        backgroundColor: const Color.fromRGBO(59, 66, 82, 1),
-      ),
-      body: (Container(
-          child: Center(
-        child: buildFutureBuilder(),
-      ))),
-    );
+        appBar: AppBar(
+          title: const Text('Product Information'),
+          backgroundColor: const Color.fromRGBO(59, 66, 82, 1),
+        ),
+        body: (Container(
+            child: Center(
+          child: Column(
+            children: <Widget>[
+              buildFutureBuilderName(),
+              buildFutureBuilderEAN(),
+              buildFutureBuilderArtcode(),
+              buildFutureBuilderArtnmr(),
+              buildFutureBuilderFormule(),
+            ],
+          ),
+        ))));
   }
 
   @override
-  FutureBuilder<ProductData> buildFutureBuilder() {
+  FutureBuilder<ProductData> buildFutureBuilderName() {
     return FutureBuilder<ProductData>(
       future: sendData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Text(snapshot.data!.name);
+        } else if (snapshot.hasError) {
+          return Text('${snapshot.error}');
+        }
+        return const CircularProgressIndicator();
+      },
+    );
+  }
+
+  @override
+  FutureBuilder<ProductData> buildFutureBuilderEAN() {
+    return FutureBuilder<ProductData>(
+      future: sendData(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Text(snapshot.data!.ean);
+        } else if (snapshot.hasError) {
+          return Text('${snapshot.error}');
+        }
+        return const CircularProgressIndicator();
+      },
+    );
+  }
+
+  @override
+  FutureBuilder<ProductData> buildFutureBuilderArtcode() {
+    return FutureBuilder<ProductData>(
+      future: sendData(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Text(snapshot.data!.artcode);
+        } else if (snapshot.hasError) {
+          return Text('${snapshot.error}');
+        }
+        return const CircularProgressIndicator();
+      },
+    );
+  }
+
+  @override
+  FutureBuilder<ProductData> buildFutureBuilderArtnmr() {
+    return FutureBuilder<ProductData>(
+      future: sendData(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Text(snapshot.data!.artnmr);
+        } else if (snapshot.hasError) {
+          return Text('${snapshot.error}');
+        }
+        return const CircularProgressIndicator();
+      },
+    );
+  }
+
+  @override
+  FutureBuilder<ProductData> buildFutureBuilderFormule() {
+    return FutureBuilder<ProductData>(
+      future: sendData(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Text(snapshot.data!.formule);
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
