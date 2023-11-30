@@ -64,7 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
     var response = await http.post(myurl, body: json.encode(data));
     if (response.statusCode == 200) {
       //Server response into variable
-      print(response.body);
       var msg = jsonDecode(response.body);
 
       //Check Login Status
@@ -167,8 +166,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       data: ThemeData(
                         primaryColor: const Color.fromRGBO(94, 129, 172, 1),
                         primaryColorDark: const Color.fromRGBO(94, 129, 172, 1),
-                        hintColor:
-                            const Color.fromRGBO(94, 129, 172, 1), //placeholder color
+                        hintColor: const Color.fromRGBO(
+                            94, 129, 172, 1), //placeholder color
                       ),
                       child: TextFormField(
                         controller: userController,
@@ -220,8 +219,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       data: ThemeData(
                         primaryColor: const Color.fromRGBO(94, 129, 172, 1),
                         primaryColorDark: const Color.fromRGBO(94, 129, 172, 1),
-                        hintColor:
-                            const Color.fromRGBO(94, 129, 172, 1), //placeholder color
+                        hintColor: const Color.fromRGBO(
+                            94, 129, 172, 1), //placeholder color
                       ),
                       child: TextFormField(
                         controller: pwdController,
