@@ -43,7 +43,16 @@ static const char *xamarin_runtime_libraries_array[] = {
 	"libSystem.Native",
 	"libSystem.Net.Security.Native",
 	"libSystem.Security.Cryptography.Native.Apple",
+	"libicudata",
+	"libicui18n",
+	"libicuuc",
+	"libmono-component-debugger-static",
+	"libmono-component-diagnostics_tracing-static",
+	"libmono-component-hot_reload-stub-static",
 	"libmonosgen-2.0",
+	"libmono-component-debugger-static",
+	"libmono-component-diagnostics_tracing-static",
+	"libmono-component-hot_reload-stub-static",
 	NULL
 };
 void xamarin_setup_impl ()
@@ -54,7 +63,7 @@ void xamarin_setup_impl ()
 	mono_sgen_mono_ilgen_init ();
 	mono_jit_set_aot_mode (MONO_AOT_MODE_INTERP_ONLY);
 	xamarin_invoke_registration_methods ();
-	xamarin_libmono_native_link_mode = XamarinNativeLinkModeDynamicLibrary;
+	xamarin_libmono_native_link_mode = XamarinNativeLinkModeStaticObject;
 	xamarin_runtime_libraries = xamarin_runtime_libraries_array;
 	xamarin_gc_pump = FALSE;
 	xamarin_init_mono_debug = TRUE;

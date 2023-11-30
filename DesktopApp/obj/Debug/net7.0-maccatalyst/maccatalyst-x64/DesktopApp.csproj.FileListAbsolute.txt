@@ -271,3 +271,4 @@
 /Users/jay/Projects/scannerapp/DesktopApp/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/DesktopApp.pdb
 /Users/jay/Projects/scannerapp/DesktopApp/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/DesktopApp.genruntimeconfig.cache
 /Users/jay/Projects/scannerapp/DesktopApp/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/ref/DesktopApp.dll
+/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/BCrypt.Net-Next.dll

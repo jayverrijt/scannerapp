@@ -14,7 +14,9 @@ public class Create
         try
         {
             db.Open();
-            db.ExecuteReader("INSERT INTO `users`(`username`, `password`, `email`, `role`) VALUES ('" + userName + "','" + passWord + "','"+ eMail + "','"+ accountType +"')");
+            string encryptedPassword = BCrypt.Net.BCrypt.HashPassword(passWord);
+            Debug.WriteLine(encryptedPassword);
+            db.ExecuteReader("INSERT INTO `users`(`username`, `password`, `email`, `role`) VALUES ('" + userName + "','" + encryptedPassword + "','"+ eMail + "','"+ accountType +"')");
         }
         catch (Exception e)
         {

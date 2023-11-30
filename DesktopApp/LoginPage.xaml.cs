@@ -24,11 +24,10 @@ public partial class LoginPage : ContentPage
     {
         try
         {
-            if (userBox.Text != "" && password != "")
+            if (userBox.Text != "" && passBox.Text != "")
             {
                 db.Open();
-                string query = "SELECT * FROM users WHERE username='" + userBox.Text + "' AND password='" +
-                               passBox.Text + "' AND role='2'";
+                string query = "SELECT * FROM users WHERE username='" + userBox.Text + "'";
                 MySqlDataReader row;
                 row = db.ExecuteReader(query);
                 if (row.HasRows)
@@ -42,12 +41,19 @@ public partial class LoginPage : ContentPage
                         role = row["role"].ToString();
                     }
 
+                    // hash check
+
+
+
                     var Session = Application.Current.Resources;
 
                     Session["username"] = username;
                     Session["password"] = password;
                     Session["email"] = email;
                     Session["role"] = role;
+
+                    bool passwordHash = BCrypt.Net.BCrypt.Verify(passBox.Text, password);
+                    Debug.WriteLine(passwordHash);
 
                     userBox.Text = "";
                     passBox.Text = "";
@@ -57,7 +63,7 @@ public partial class LoginPage : ContentPage
                 }
                 else
                 {
-                    DisplayAlert("ScannerApp: ERROR", "Gebruiker " + userBox.Text + " niet gevonden." , "Oke");
+                    DisplayAlert("ScannerApp: ERROR", "Gebruiker " + userBox.Text + " niet gevonden.", "Oke");
                 }
             }
             else
@@ -68,8 +74,8 @@ public partial class LoginPage : ContentPage
         }
         catch
         {
-                Debug.WriteLine("DB Error");
-                DisplayAlert("ScannerApp: ERROR", "Geen verbinding met Database of fout in Database", "Oke");
+            Debug.WriteLine("DB Error");
+            DisplayAlert("ScannerApp: ERROR", "Geen verbinding met Database of fout in Database", "Oke");
         }
     }
 }

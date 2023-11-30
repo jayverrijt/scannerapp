@@ -47,6 +47,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/BCrypt.Net-Next.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EVufr/i5CaGgi2WzFQWOsYLAxMOnfBn81fTanaSdSmM=
+			</data>
+		</dict>
 		<key>MonoBundle/BouncyCastle.Crypto.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -65,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0zddVEBQwdFzdiu7xYX6RBAVw9OKwMXonAyB7EWNk8Y=
+			nvKY6i/3YwBvQEep8BU9JSunSPbmF4WKvGCqMr9Z9gI=
 			</data>
 		</dict>
 		<key>MonoBundle/DesktopApp.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			boJGfkJysB4jZW0CluI9UoEdQkl1v5nxy8wH4KkCC+I=
+			CQpFNJFBlX++4mxdqrQVZKNc4bB6HpEG0LuywYLCZhk=
 			</data>
 		</dict>
 		<key>MonoBundle/Google.Protobuf.dll</key>
@@ -842,7 +849,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qsLLqTMv5jsNfzYNxH8g4rHQvm5xdHk95Nh9ECZ2Ico=
+			7HTgo1aZdGBHeodG3KE+VL3Zg4MlTZwzy5tWdkiHL88=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Private.CoreLib.dll</key>

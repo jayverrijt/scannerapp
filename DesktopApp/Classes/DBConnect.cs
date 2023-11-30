@@ -8,7 +8,7 @@ namespace DesktopApp.Classes
     {
         MySqlConnection conn;
         string myConnectionString;
-        static string host = "phpmyadmin.jverrijt.nl";
+        static string host = "phpmyadmin.jverrijt.com";
         static string database = "scannerapp";
         static string userDB = "jayv";
         static string password = "Woezel-2005!";

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tP5o37m3XTLzQSZDINxFQIrjPkqH32JaqCVgq6CBK0Ya1fwHIYUpcgKuVZ/KyJ0dH6Ll5iBT2LCEgXbmF7OOGA==",
+  "dgSpecHash": "fXaIvnwtVm9FJIKrGoBuWIsTASGAlml6Gb4jZF75a25HCrSDqGzyCy9Av4AIsCkGlf6IWfte/7E8yH7blBTPAg==",
   "success": true,
   "projectFilePath": "/Users/jay/Projects/scannerapp/DesktopApp/DesktopApp.csproj",
   "expectedPackageFiles": [
+    "/Users/jay/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/jay/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "/Users/jay/.nuget/packages/google.protobuf/3.21.9/google.protobuf.3.21.9.nupkg.sha512",
     "/Users/jay/.nuget/packages/googlegson/2.9.1.1/googlegson.2.9.1.1.nupkg.sha512",
@@ -19,7 +20,7 @@
     "/Users/jay/.nuget/packages/microsoft.extensions.logging.debug/7.0.0/microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "/Users/jay/.nuget/packages/microsoft.maui.graphics/7.0.96/microsoft.maui.graphics.7.0.96.nupkg.sha512",
+    "/Users/jay/.nuget/packages/microsoft.maui.graphics/7.0.101/microsoft.maui.graphics.7.0.101.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/jay/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
