@@ -1,61 +1,36 @@
 <?php
+    include 'db.php';
 
-//MySQL database Connection
-$con=mysqli_connect('phpmyadmin.jverrijt.com','jayv','Woezel-2005!','scannerapp');
+    global $serverurl, $servuser, $servpasswd, $target;
 
-//Received JSON into $json variable
-$json = file_get_contents('php://input');
+    $con = mysqli_connect($serverurl, $servuser, $servpasswd, $target);
+    $json = file_get_contents('php://input');
+    $obj = json_decode($json,true);
 
-//Decoding the received JSON and store into $obj variable.
-$obj = json_decode($json,true);
+    if(isset($obj['username']) && isset($obj['password'])){
+        $uname = mysqli_real_escape_string($con, $obj['username']);
+        $plainpass = mysqli_real_escape_string($con, $obj['password']);
 
-if(isset($obj["username"]) && isset($obj["password"])){
+        $result = [];
 
-    $uname = mysqli_real_escape_string($con,$obj['username']);
-    $pwd = mysqli_real_escape_string($con,$obj['password']);
 
-    //Declare array variable
-    $result=[];
-
-    // Getting Hash
-    $sql="SELECT password FROM users WHERE username='{$uname}'";
-    $res=$con->query($sql);
-    $row=$res->fetch_assoc();
-    $hash=$row['password'];
-
-    // Verify Hash
-    if (password_verify($pwd, $hash)) {
-        $result['loginStatus']=true;
-        $result['message']="Login Successfully";
-        $result["userInfo"]=$row;
-    } else {
-        $result['loginStatus']=false;
-        $result['message']="Invalid Login Details";
-        $result["userInfo"]=$row;
+        // Fetching Hash from DB
+        $query = "SELECT password FROM users WHERE username='{$uname}' AND role='1'";
+        $run = mysqli_query($con,$query);
+        $res = mysqli_fetch_assoc($run);
+        $hashresult = $res['password'];
     }
 
-    //Select Query
-    //$sql="SELECT * FROM users WHERE username='{$uname}' and password='{$pwd}' AND role='1'";
-    //$res=$con->query($sql);
-    //if($res->num_rows>0){
 
-        //$row=$res->fetch_assoc();
+if (password_verify($plainpass,$hashresult)){
+    $result['loginStatus'] = true;
+    $result['message'] = 'Login Successful';
 
-        //$result['loginStatus']=true;
-        //$result['message']="Login Successfully";
-
-        //$result["userInfo"]=$row;
-
-    //}else{
-
-        //$result['loginStatus']=false;
-        //$result['message']="Invalid Login Details";
-    //}
-
-    // Converting the array into JSON format.
-    $json_data=json_encode($result);
-
-    // Echo the $json.
-    echo $json_data;
+} else {
+    $result["loginStatus"] = false;
+    $result["message"] = "Login Failed";
 }
+
+    $json_e = json_encode($result);
+    echo $json_e;
 ?>
