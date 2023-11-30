@@ -55,22 +55,59 @@ class Product extends StatelessWidget {
     sendData();
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Product Information'),
-          backgroundColor: const Color.fromRGBO(59, 66, 82, 1),
+      appBar: AppBar(
+        title: const Text('Product Information'),
+        backgroundColor: const Color.fromRGBO(59, 66, 82, 1),
+      ),
+      body: Container(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const Text(
+              'Product Naam:',
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Color.fromRGBO(94, 129, 172, 1),
+                  fontWeight: FontWeight.bold),
+            ),
+            buildFutureBuilderName(),
+            const Text(
+              'EAN Code:',
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Color.fromRGBO(94, 129, 172, 1),
+                  fontWeight: FontWeight.bold),
+            ),
+            buildFutureBuilderEAN(),
+            const Text(
+              'Artikel Code:',
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Color.fromRGBO(94, 129, 172, 1),
+                  fontWeight: FontWeight.bold),
+            ),
+            buildFutureBuilderArtcode(),
+            const Text(
+              'Nummer:',
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Color.fromRGBO(94, 129, 172, 1),
+                  fontWeight: FontWeight.bold),
+            ),
+            buildFutureBuilderArtnmr(),
+            const Text(
+              'Formule:',
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Color.fromRGBO(94, 129, 172, 1),
+                  fontWeight: FontWeight.bold),
+            ),
+            buildFutureBuilderFormule(),
+          ],
         ),
-        body: (Container(
-            child: Center(
-          child: Column(
-            children: <Widget>[
-              buildFutureBuilderName(),
-              buildFutureBuilderEAN(),
-              buildFutureBuilderArtcode(),
-              buildFutureBuilderArtnmr(),
-              buildFutureBuilderFormule(),
-            ],
-          ),
-        ))));
+      ),
+    );
   }
 
   @override
@@ -79,7 +116,9 @@ class Product extends StatelessWidget {
       future: sendData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return Text(snapshot.data!.name);
+          return Text(snapshot.data!.name,
+              style: TextStyle(
+                  color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
@@ -94,7 +133,9 @@ class Product extends StatelessWidget {
       future: sendData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return Text(snapshot.data!.ean);
+          return Text(snapshot.data!.ean,
+              style: TextStyle(
+                  color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
@@ -109,7 +150,9 @@ class Product extends StatelessWidget {
       future: sendData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return Text(snapshot.data!.artcode);
+          return Text(snapshot.data!.artcode,
+              style: TextStyle(
+                  color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
@@ -124,7 +167,9 @@ class Product extends StatelessWidget {
       future: sendData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return Text(snapshot.data!.artnmr);
+          return Text(snapshot.data!.artnmr,
+              style: TextStyle(
+                  color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
@@ -139,7 +184,9 @@ class Product extends StatelessWidget {
       future: sendData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return Text(snapshot.data!.formule);
+          return Text(snapshot.data!.formule,
+              style: TextStyle(
+                  color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
