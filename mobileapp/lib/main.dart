@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future userLogin() async {
     //Login API URL
     //use your local IP address instead of localhost or use Web API
-    String url = "http://www.jverrijt.com/API/ScannerApp/Login.php";
+    String url = "http://php.jverrijt.com/API/ScannerApp/Login.php";
 
     // Showing LinearProgressIndicator.
     setState(() {

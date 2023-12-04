@@ -33,7 +33,7 @@ class Product extends StatelessWidget {
   Future<ProductData> sendData() async {
     print(search);
     final response = await http.post(
-      Uri.parse('http://jverrijt.com/API/ScannerApp/fetchProducts.php'),
+      Uri.parse('http://php.jverrijt.com/API/ScannerApp/fetchProducts.php'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
@@ -117,7 +117,7 @@ class Product extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Text(snapshot.data!.name,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
@@ -134,7 +134,7 @@ class Product extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Text(snapshot.data!.ean,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
@@ -151,7 +151,7 @@ class Product extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Text(snapshot.data!.artcode,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
@@ -168,7 +168,7 @@ class Product extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Text(snapshot.data!.artnmr,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
@@ -185,7 +185,7 @@ class Product extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Text(snapshot.data!.formule,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color.fromRGBO(216, 222, 223, 1), fontSize: 18));
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
