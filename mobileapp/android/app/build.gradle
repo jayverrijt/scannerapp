@@ -23,6 +23,17 @@ if (flutterVersionName == null) {
 }
 
 android {
+    defaultConfig {
+        minSdkVersion 16
+        applicationId "com.jayverrijt.scannerapp"
+        targetSdkVersion 33
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
     namespace "com.jayverrijt.scannerapp"
     //compileSdkVersion flutter.compileSdkVersion
     compileSdkVersion 33 
