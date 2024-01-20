@@ -10,6 +10,7 @@ namespace DesktopApp.Classes
         public void delFromUsers(string id)
         {
             db.Open();
+            Debug.WriteLine("Test");
             db.ExecuteReader("DELETE FROM users WHERE username = '" + id + "'");
         }
 
