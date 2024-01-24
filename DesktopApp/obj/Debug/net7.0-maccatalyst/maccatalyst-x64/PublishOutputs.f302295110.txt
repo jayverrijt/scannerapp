@@ -199,11 +199,5 @@
 /Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/Microsoft.Maui.Controls.dll
 /Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/Microsoft.Maui.Essentials.dll
 /Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/DesktopApp.pdb
-/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/libSystem.IO.Compression.Native.dylib
-/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/libSystem.Native.dylib
-/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/libSystem.Net.Security.Native.dylib
-/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/libSystem.Security.Cryptography.Native.Apple.dylib
-/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/libmonosgen-2.0.dylib
-/Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/libxamarin-dotnet-debug.dylib
 /Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MonoBundle/System.Private.CoreLib.aotdata.x86_64
 /Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DesktopApp.app/Contents/MacOS//DesktopApp

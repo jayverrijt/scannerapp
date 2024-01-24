@@ -1,8 +1,10 @@
 <?php
 
+  include 'db.php';
+  global $serverurl, $servuser, $servpasswd, $target;
   //MySQL database Connection
-  $con=mysqli_connect('phpmyadmin.jverrijt.com','jayv','Woezel-2005!','scannerapp');
 
+  $con = mysqli_connect($serverurl, $servuser, $servpasswd, $target);
   //Received JSON into $json variable
   $json = file_get_contents('php://input');
 

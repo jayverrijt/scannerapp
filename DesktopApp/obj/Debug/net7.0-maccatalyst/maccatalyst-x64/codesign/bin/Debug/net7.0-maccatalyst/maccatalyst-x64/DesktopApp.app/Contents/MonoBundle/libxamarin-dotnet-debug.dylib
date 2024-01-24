@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/jay/Projects/scannerapp/DesktopApp/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/DesktopApp.app/Contents/MonoBundle/libxamarin-dotnet-debug.dylib
